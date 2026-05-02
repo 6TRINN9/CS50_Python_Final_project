@@ -18,7 +18,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QDialog, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QSizePolicy,
     QSlider, QVBoxLayout, QWidget)
-import Res_rc_rc
+import ui.Res_rc_rc
 
 class Ui_Password_generator(object):
     def setupUi(self, Password_generator):
