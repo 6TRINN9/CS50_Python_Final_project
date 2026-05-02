@@ -1,14 +1,28 @@
-from generator import generate_password
-from utils import evaluate_password_strength
+import sys
 
-def main():
+from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6 import QtWidgets
 
-    password = generate_password(24, True, True, True)
-    strength = evaluate_password_strength(password)
+from W_new_note import W_new_note
 
-    print(f"Base password (12 symbols): {password}")
-    print(f"Strength password: {strength}/100")
+class Password_manager(QMainWindow):
+    def __init__(self):
+        super(Password_manager, self).__init__()
+        # self.ui = Ui_MainWindow()
+        # self.ui.setupUi(self)
+        self.open_new_note_window()
+       
+
+    def open_new_note_window(self):
+        self.w_new_note = W_new_note()
+    
+    
+
 
 
 if __name__ == "__main__":
-    main()
+    app = QApplication(sys.argv)
+    window = Password_manager()
+    window.show()
+
+    sys.exit(app.exec())

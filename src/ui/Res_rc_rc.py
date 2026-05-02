@@ -1,0 +1,251 @@
+# Resource object code (Python 3)
+# Created by: object code
+# Created by: The Resource Compiler for Qt version 6.11.0
+# WARNING! All changes made in this file will be lost!
+
+from PySide6 import QtCore
+
+qt_resource_data = b"\
+\x00\x00\x02f\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M607.5-372.5Q\
+660-425 660-500t\
+-52.5-127.5Q555-\
+680 480-680t-127\
+.5 52.5Q300-575 \
+300-500t52.5 127\
+.5Q405-320 480-3\
+20t127.5-52.5Zm-\
+204-51Q372-455 3\
+72-500t31.5-76.5\
+Q435-608 480-608\
+t76.5 31.5Q588-5\
+45 588-500t-31.5\
+ 76.5Q525-392 48\
+0-392t-76.5-31.5\
+ZM214-281.5Q94-3\
+63 40-500q54-137\
+ 174-218.5T480-8\
+00q146 0 266 81.\
+5T920-500q-54 13\
+7-174 218.5T480-\
+200q-146 0-266-8\
+1.5ZM480-500Zm20\
+7.5 160.5Q782-39\
+9 832-500q-50-10\
+1-144.5-160.5T48\
+0-720q-113 0-207\
+.5 59.5T128-500q\
+50 101 144.5 160\
+.5T480-280q113 0\
+ 207.5-59.5Z\x22/><\
+/svg>\
+\x00\x00\x01T\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M360-240q-33 \
+0-56.5-23.5T280-\
+320v-480q0-33 23\
+.5-56.5T360-880h\
+360q33 0 56.5 23\
+.5T800-800v480q0\
+ 33-23.5 56.5T72\
+0-240H360Zm0-80h\
+360v-480H360v480\
+ZM200-80q-33 0-5\
+6.5-23.5T120-160\
+v-560h80v560h440\
+v80H200Zm160-240\
+v-480 480Z\x22/></s\
+vg>\
+\x00\x00\x01?\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M280-120q-33 \
+0-56.5-23.5T200-\
+200v-520h-40v-80\
+h200v-40h240v40h\
+200v80h-40v520q0\
+ 33-23.5 56.5T68\
+0-120H280Zm400-6\
+00H280v520h400v-\
+520ZM360-280h80v\
+-360h-80v360Zm16\
+0 0h80v-360h-80v\
+360ZM280-720v520\
+-520Z\x22/></svg>\
+\x00\x00\x00\xb6\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M440-120v-320\
+H120v-80h320v-32\
+0h80v320h320v80H\
+520v320h-80Z\x22/><\
+/svg>\
+\x00\x00\x01\xc1\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M560-80v-123l\
+221-220q9-9 20-1\
+3t22-4q12 0 23 4\
+.5t20 13.5l37 37\
+q8 9 12.5 20t4.5\
+ 22q0 11-4 22.5T\
+903-300L683-80H5\
+60Zm300-263-37-3\
+7 37 37ZM620-140\
+h38l121-122-18-1\
+9-19-18-122 121v\
+38ZM240-80q-33 0\
+-56.5-23.5T160-1\
+60v-640q0-33 23.\
+5-56.5T240-880h3\
+20l240 240v120h-\
+80v-80H520v-200H\
+240v640h240v80H2\
+40Zm280-400Zm241\
+ 199-19-18 37 37\
+-18-19Z\x22/></svg>\
+\
+\x00\x00\x01\xa1\
+<\
+svg xmlns=\x22http:\
+//www.w3.org/200\
+0/svg\x22 height=\x222\
+4px\x22 viewBox=\x220 \
+-960 960 960\x22 wi\
+dth=\x2224px\x22 fill=\
+\x22#FFFFFF\x22><path \
+d=\x22M339.5-108.5q\
+-65.5-28.5-114-7\
+7t-77-114Q120-36\
+5 120-440h80q0 1\
+17 81.5 198.5T48\
+0-160q117 0 198.\
+5-81.5T760-440q0\
+-117-81.5-198.5T\
+480-720h-6l62 62\
+-56 58-160-160 1\
+60-160 56 58-62 \
+62h6q75 0 140.5 \
+28.5t114 77q48.5\
+ 48.5 77 114T840\
+-440q0 75-28.5 1\
+40.5t-77 114q-48\
+.5 48.5-114 77T4\
+80-80q-75 0-140.\
+5-28.5Z\x22/></svg>\
+\
+"
+
+qt_resource_name = b"\
+\x00\x05\
+\x00O\xa6S\
+\x00I\
+\x00c\x00o\x00n\x00s\
+\x00\x05\
+\x00o\xa6S\
+\x00i\
+\x00c\x00o\x00n\x00s\
+\x005\
+\x0d\xd7\x1a\xe7\
+\x00v\
+\x00i\x00s\x00i\x00b\x00i\x00l\x00i\x00t\x00y\x00_\x002\x004\x00d\x00p\x00_\x00F\
+\x00F\x00F\x00F\x00F\x00F\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\x00g\x00h\x00t\
+\x004\x000\x000\x00_\x00G\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\x00z\x002\x004\
+\x00.\x00s\x00v\x00g\
+\x007\
+\x0b$pG\
+\x00c\
+\x00o\x00n\x00t\x00e\x00n\x00t\x00_\x00c\x00o\x00p\x00y\x00_\x002\x004\x00d\x00p\
+\x00_\x00F\x00F\x00F\x00F\x00F\x00F\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\x00g\
+\x00h\x00t\x004\x000\x000\x00_\x00G\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\x00z\
+\x002\x004\x00.\x00s\x00v\x00g\
+\x001\
+\x07\x8e,\x07\
+\x00d\
+\x00e\x00l\x00e\x00t\x00e\x00_\x002\x004\x00d\x00p\x00_\x00F\x00F\x00F\x00F\x00F\
+\x00F\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\x00g\x00h\x00t\x004\x000\x000\x00_\
+\x00G\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\x00z\x002\x004\x00.\x00s\x00v\x00g\
+\
+\x000\
+\x0c\xf2`\xa7\
+\x00a\
+\x00d\x00d\x00_\x002\x00_\x002\x004\x00d\x00p\x00_\x00F\x00F\x00F\x00F\x00F\x00F\
+\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\x00g\x00h\x00t\x004\x000\x000\x00_\x00G\
+\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\x00z\x002\x004\x00.\x00s\x00v\x00g\
+\x008\
+\x0a<\xd6\x07\
+\x00e\
+\x00d\x00i\x00t\x00_\x00d\x00o\x00c\x00u\x00m\x00e\x00n\x00t\x00_\x002\x004\x00d\
+\x00p\x00_\x00F\x00F\x00F\x00F\x00F\x00F\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\
+\x00g\x00h\x00t\x004\x000\x000\x00_\x00G\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\
+\x00z\x002\x004\x00.\x00s\x00v\x00g\
+\x001\
+\x02?\x1a\x07\
+\x00r\
+\x00e\x00p\x00l\x00a\x00y\x00_\x002\x004\x00d\x00p\x00_\x00F\x00F\x00F\x00F\x00F\
+\x00F\x00_\x00F\x00I\x00L\x00L\x000\x00_\x00w\x00g\x00h\x00t\x004\x000\x000\x00_\
+\x00G\x00R\x00A\x00D\x000\x00_\x00o\x00p\x00s\x00z\x002\x004\x00.\x00s\x00v\x00g\
+\
+"
+
+qt_resource_struct = b"\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x01\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x02\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x00\x10\x00\x02\x00\x00\x00\x06\x00\x00\x00\x03\
+\x00\x00\x00\x00\x00\x00\x00\x00\
+\x00\x00\x02H\x00\x00\x00\x00\x00\x01\x00\x00\x07\x84\
+\x00\x00\x01\x9d\xe3\xb0\xee\x81\
+\x00\x00\x01\x04\x00\x00\x00\x00\x00\x01\x00\x00\x03\xc2\
+\x00\x00\x01\x9d\xdeR\xa0\xc5\
+\x00\x00\x01\xd2\x00\x00\x00\x00\x00\x01\x00\x00\x05\xbf\
+\x00\x00\x01\x9d\xdeR\x84k\
+\x00\x00\x00\x90\x00\x00\x00\x00\x00\x01\x00\x00\x02j\
+\x00\x00\x01\x9d\xe3\xb1\x17\xaa\
+\x00\x00\x01l\x00\x00\x00\x00\x00\x01\x00\x00\x05\x05\
+\x00\x00\x01\x9d\xdeRb\x89\
+\x00\x00\x00 \x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x9d\xe3\xb2uc\
+"
+
+def qInitResources():
+    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+def qCleanupResources():
+    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)
+
+qInitResources()

@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>../icons/add_2_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>../icons/content_copy_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>../icons/delete_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>../icons/edit_document_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>../icons/replay_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+    <file>../icons/visibility_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg</file>
+  </qresource>
+</RCC>
