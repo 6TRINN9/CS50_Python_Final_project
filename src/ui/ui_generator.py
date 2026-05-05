@@ -18,11 +18,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QDialog, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QSizePolicy,
     QSlider, QVBoxLayout, QWidget)
-<<<<<<< HEAD
+
 import ui.Res_rc_rc
-=======
-import Res_rc_rc
->>>>>>> 5b30136 (Added window new_note and winodw generator)
 
 class Ui_Password_generator(object):
     def setupUi(self, Password_generator):

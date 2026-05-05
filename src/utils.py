@@ -5,17 +5,7 @@ from math import log2
 def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_digits=True, use_specials=True) -> string:
     """
     Generates a random password with the given parameters.
-
-    Arguments:
-    length (int): Length of the length.
-    use_letters (bool): Use letters.
-    use_digits (bool): Use numbers.
-    use_special (bool): Use special characters.
-
-    Return:
-    str: Generated password.
     """
-    similar_chars = "il1Lo0O"
 
     if length <= 0:
         raise ValueError("Password length must be greater than 0!")
@@ -59,15 +49,15 @@ def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_dig
 
 def evaluate_password_strength(entropy) -> string:
     """
-    Evaluates password strength based on entropy
+    Evaluates password strength based on entropy.
     """
     match entropy:
         case entropy if entropy <= 20:
             return "Strength: Pathetic"
         case entropy if 20 < entropy < 50:
-            return "Strength: Pathetic"
+            return "Strength: Weak"
         case entropy if 50 <= entropy <= 60:
-            return "Strength: Pathetic"
+            return "Strength: Good"
         case entropy if 60 < entropy < 100:
             return "Strength: Strong"
         case entropy if entropy > 100:
