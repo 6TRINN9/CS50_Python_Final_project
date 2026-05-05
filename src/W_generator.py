@@ -8,18 +8,22 @@ from utils import generate_password, evaluate_password_strength, calculate_passw
 
 
 class W_generator(QtWidgets.QDialog):
-    password = ""
-    length = 8
-    use_lowercase = True
-    use_uppercase = True
-    use_digits = True
-    use_specials = True
+    
 
-    entropy = 0
-    strength = "Strength: none"
-
+   
     def __init__(self, _W_new_note):       
         super(W_generator, self).__init__() 
+
+        self.password = ""
+        self.length = 8
+        self.use_lowercase = True
+        self.use_uppercase = True
+        self.use_digits = True
+        self.use_specials = True
+        self.entropy = 0
+        self.strength = "Strength: none"
+
+
         self._W_new_note = _W_new_note
         self.ui = Ui_Password_generator()
         self.ui.setupUi(self)

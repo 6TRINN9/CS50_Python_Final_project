@@ -32,10 +32,20 @@ class Ui_New_Note(object):
         self.verticalLayout_2 = QVBoxLayout(New_Note)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(10, 0, 10, 0)
+        self.verticalLayout_2.setContentsMargins(10, 10, 10, 10)
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.label_note = QLabel(New_Note)
+        self.label_note.setObjectName(u"label_note")
+        self.label_note.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"font-size: 24pt;\n"
+"font-weight: bold;\n"
+"background-color: none;\n"
+"border: none;")
+
+        self.verticalLayout.addWidget(self.label_note, 0, Qt.AlignmentFlag.AlignHCenter)
+
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.lb_title = QLabel(New_Note)
@@ -107,12 +117,18 @@ class Ui_New_Note(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.Spacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.Spacer = QSpacerItem(150, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_4.addItem(self.Spacer)
 
         self.btn_create_password = QPushButton(New_Note)
         self.btn_create_password.setObjectName(u"btn_create_password")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btn_create_password.sizePolicy().hasHeightForWidth())
+        self.btn_create_password.setSizePolicy(sizePolicy)
+        self.btn_create_password.setMinimumSize(QSize(20, 0))
         self.btn_create_password.setStyleSheet(u"QPushButton {\n"
 "font-size: 16pt;\n"
 "color: white;\n"
@@ -192,6 +208,7 @@ class Ui_New_Note(object):
 
     def retranslateUi(self, New_Note):
         New_Note.setWindowTitle(QCoreApplication.translate("New_Note", u"New note", None))
+        self.label_note.setText(QCoreApplication.translate("New_Note", u"New note", None))
         self.lb_title.setText(QCoreApplication.translate("New_Note", u"Title", None))
         self.le_Title.setText("")
         self.le_Title.setPlaceholderText(QCoreApplication.translate("New_Note", u"Title", None))
@@ -199,7 +216,7 @@ class Ui_New_Note(object):
         self.le_login.setPlaceholderText(QCoreApplication.translate("New_Note", u"Login", None))
         self.lb_password.setText(QCoreApplication.translate("New_Note", u"Password", None))
         self.le_password.setPlaceholderText(QCoreApplication.translate("New_Note", u"Password", None))
-        self.btn_create_password.setText(QCoreApplication.translate("New_Note", u"Create", None))
+        self.btn_create_password.setText(QCoreApplication.translate("New_Note", u"Generate", None))
         self.lb_url.setText(QCoreApplication.translate("New_Note", u"URL", None))
         self.le_url.setPlaceholderText(QCoreApplication.translate("New_Note", u"URL", None))
         self.btn_create_note.setText(QCoreApplication.translate("New_Note", u"Create", None))

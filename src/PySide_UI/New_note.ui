@@ -43,19 +43,33 @@ font-family: OCR-A BT</string>
     <number>10</number>
    </property>
    <property name="topMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <property name="rightMargin">
     <number>10</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <property name="spacing">
       <number>10</number>
      </property>
+     <item alignment="Qt::AlignmentFlag::AlignHCenter">
+      <widget class="QLabel" name="label_note">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font-size: 24pt;
+font-weight: bold;
+background-color: none;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>New note</string>
+       </property>
+      </widget>
+     </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -156,9 +170,12 @@ background-color:  rgba(255, 255, 255, 40);</string>
          <property name="orientation">
           <enum>Qt::Orientation::Horizontal</enum>
          </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>40</width>
+           <width>150</width>
            <height>20</height>
           </size>
          </property>
@@ -166,6 +183,18 @@ background-color:  rgba(255, 255, 255, 40);</string>
        </item>
        <item>
         <widget class="QPushButton" name="btn_create_password">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>0</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 font-size: 16pt;
@@ -186,7 +215,7 @@ icon-size: 20pt 20pt;
 }</string>
          </property>
          <property name="text">
-          <string>Create</string>
+          <string>Generate</string>
          </property>
         </widget>
        </item>

@@ -16,71 +16,163 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(25, 23, 27, 255), stop:1 rgba(43, 3, 7, 255));
+font-family: OCR-A BT</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_create">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>110</y>
-      <width>81</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Create</string>
-    </property>
-   </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>240</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>0</y>
-      <width>182</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="le_search_password"/>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_search">
-       <property name="text">
-        <string>Search</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="Title">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font-size: 24pt;
+font-weight: bold;
+background-color: none;
+border: none;
+</string>
+      </property>
+      <property name="text">
+       <string>Password manager</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btn_create">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+font-size: 16pt;
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid  rgba(255, 255, 255, 40);
+border-radius: 7px;
+width: 100px;
+height: 25px;
+icon-size: 30pt 30pt;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 60);
+icon-size: 20pt 20pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Create</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_edit">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+font-size: 16pt;
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid  rgba(255, 255, 255, 40);
+border-radius: 7px;
+width: 100px;
+height: 25px;
+icon-size: 30pt 30pt;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 60);
+icon-size: 20pt 20pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_delete">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+font-size: 16pt;
+color: white;
+background-color: rgba(255, 255, 255, 30);
+border: 1px solid  rgba(255, 255, 255, 40);
+border-radius: 7px;
+width: 100px;
+height: 25px;
+icon-size: 30pt 30pt;
+}
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 60);
+icon-size: 20pt 20pt;
+}</string>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);
+font-size: 24pt;
+font-weight: bold;
+background-color: none;
+border: none;
+</string>
+        </property>
+        <property name="text">
+         <string>Search:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="le_search_password">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid  rgba(255, 255, 255, 40);
+border-radius: 7px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>Password by Title</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>33</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
