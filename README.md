@@ -10,7 +10,7 @@ All data is stored in a local **SQLite** database. All CRUD operations, header s
 
 - [Features](#-features)
 - [Technologies](#-technologies)
-- [Структура проекта](#-структура-проекта)
+- [Project structure](#-project-structure)
 - [База данных](#-база-данных)
 - [Использование](#-использование)
   - [Главное окно](#главное-окно)
@@ -48,17 +48,17 @@ All data is stored in a local **SQLite** database. All CRUD operations, header s
 
 ## 🧰 Technologies
 
-| Компонент          | Технология                     |
+| Component          | Technology                     |
 |-------------------|--------------------------------|
 | GUI               | PySide6 (Qt6 для Python)       |
-| База данных       | SQLite через QtSql             |
-| Генерация чисел   | `secrets`,  `math.log2`        |
+| The database       | SQLite through QtSql             |
+| Generating numbers   | `secrets`,  `math.log2`        |
 |                   | `random.SystemRandom`
-| Дата              | `datetime`                     |
+| Date              | `datetime`                     |
 
 ---
 
-## 📁 Структура проекта
+## 📁 Project structure
 
 - password-manager/
 - src/
