@@ -1,15 +1,15 @@
 # 🔐 Password Manager
 
-Приложение для безопасного хранения и генерации паролей с графическим интерфейсом на **PySide6**.  
-Все данные хранятся в локальной базе **SQLite**. Поддерживаются все CRUD-операции, поиск по заголовкам, встроенный генератор криптостойких паролей с оценкой их энтропии и стойкости.
+An application for secure password storage and generation with a graphical interface on **PySide6**. 
+All data is stored in a local **SQLite** database. All CRUD operations, header search, and a built-in cryptographic password generator with an assessment of their entropy and durability are supported.
 
 [Видео работы приложения]
 (https://youtu.be/FvWbDHgureo)  
 
-## 📋 Содержание
+## 📋 Content
 
-- [Возможности](#-возможности)
-- [Технологии](#-технологии)
+- [Features](#-features)
+- [Technologies](#-technologies)
 - [Структура проекта](#-структура-проекта)
 - [База данных](#-база-данных)
 - [Использование](#-использование)
@@ -22,7 +22,7 @@
 
 ---
 
-## ✨ Возможности
+## ✨ Features
 
 - ✅ **Полноценное управление учётными записями**  
   Заголовок, логин, пароль, URL, дата создания/изменения.
@@ -46,7 +46,7 @@
 
 ---
 
-## 🧰 Технологии
+## 🧰 Technologies
 
 | Компонент          | Технология                     |
 |-------------------|--------------------------------|
