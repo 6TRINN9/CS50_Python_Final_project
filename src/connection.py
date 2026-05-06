@@ -14,7 +14,7 @@ class Data:
         # Check if the instance has already been initialized
         if not hasattr(self, 'db'):
             self.db = None
-            self.create_connection()
+            self.create_connection() 
 
     def create_connection(self):
         """
