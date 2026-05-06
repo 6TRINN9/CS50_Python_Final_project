@@ -3,7 +3,7 @@
 An application for secure password storage and generation with a graphical interface on **PySide6**. 
 All data is stored in a local **SQLite** database. All CRUD operations, header search, and a built-in cryptographic password generator with an assessment of their entropy and durability are supported.
 
-[Видео работы приложения]
+[Video of the app's work]
 (https://youtu.be/FvWbDHgureo)  
 
 ## 📋 Content
@@ -11,39 +11,39 @@ All data is stored in a local **SQLite** database. All CRUD operations, header s
 - [Features](#-features)
 - [Technologies](#-technologies)
 - [Project structure](#-project-structure)
-- [База данных](#-база-данных)
-- [Использование](#-использование)
-  - [Главное окно](#главное-окно)
-  - [Создание записи](#создание-записи)
-  - [Генератор паролей](#генератор-паролей)
-  - [Редактирование и удаление](#редактирование-и-удаление)
-  - [Поиск](#поиск)
-- [Возможные улучшения](#-возможные-улучшения)
+- [Database](#-database)
+- [Manual](#-manual)
+  - [Main window](#-main-window)
+  - [Creating an entry](#-creating-an-entry)
+  - [Password Generator](#-password-generator)
+  - [Editing and deleting](#-editing-and-deleting)
+  - [Search](#-search)
+- [Possible improvements](#-possible-improvements)
 
 ---
 
 ## ✨ Features
 
-- ✅ **Полноценное управление учётными записями**  
-  Заголовок, логин, пароль, URL, дата создания/изменения.
+- ✅ **Full-fledged account management**  
+  Title, login, password, URL, date of creation/modification.
 
-- 🔄 **Генератор паролей**  
-  - Длина от 1 до 30+ символов (слайдер)  
-  - Выбор типов символов: `a-z`, `A-Z`, `0-9`, символы пунктуации  
-  - Криптостойкая случайность (`secrets` + `shuffle`)
+- 🔄 **Password Generating**  
+  - Length from 1 to 30+ characters (slider)  
+  - Choice of character types: `a-z`, `A-Z`, `0-9`, punctuation characters
+  - Cryptographic randomness (`secrets` + `shuffle`)
 
-- 📊 **Оценка стойкости пароля**  
-  - Вычисление энтропии (бит) на основе реально использованных классов символов  
-  - Качественная шкала: `Pathetic` (<20 бит), `Weak` (20–50),  `Good` (50–60) `Strong` (60–100), `Excellent` (>100)
+- 📊 **Password strength assessment**
+- Calculation of entropy (bits) based on the actual character classes used  
+  - Quality scale: `Pathetic' (<20 bits), `Weak` (20-50), `Good` (50-60) `Strong` (60-100), `Excellent' (>100)
 
-- 🗄️ **Локальное хранение**  
-  SQLite с автоматическим созданием таблицы и индекса.
+- 🗄️ **Local storage**
+SQLite with automatic table and index creation.
 
-- 🔍 **Поиск по заголовку в реальном времени**
+- 🔍 **Real-time title search**
 
-- 🖱️ **Удобный интерфейс**  
-  Таблица с выделением строк, подтверждение удаления.
-
+- 🖱️ **User-friendly interface**  
+  Table with row selection, confirmation of deletion.
+  
 ---
 
 ## 🧰 Technologies
@@ -62,12 +62,12 @@ All data is stored in a local **SQLite** database. All CRUD operations, header s
 
 - password-manager/
 - src/
-  - icons/                  # иконки для GUI
-  - PySide_UI/              # сырые UI-файлы из PySide6 disigner
+  - icons/                  # GUI icons
+  - PySide_UI/              # raw UI files from PySide6 disigner
     - Main.ui
     - New_note.ui
     - Password_Generator.ui
-  - ui/                     # скомпилированные UI-файлы
+  - ui/                     # compiled UI files
     - ui_main.py
     - Res_rc_rc.py
     - Res_rc.qrc
@@ -76,94 +76,93 @@ All data is stored in a local **SQLite** database. All CRUD operations, header s
   - tests/
     - test_connection.py
     - test_utils.py
-  - connection.py           # класс Data – синглтон для работы с БД
-  - utils.py                # генерация паролей, энтропия, оценка
-  - W_new_note.py           # диалог создания записи
-  - W_edit_note.py          # диалог редактирования
-  - W_generator.py          # диалог генератора паролей
-  - main.py                     # главное окно (QMainWindow)
-  - manager_db.db               # SQLite-файл (создаётся автоматически)
-- preview/ # картинки пример интервейса
-- requirements.txt # необходимые импорты
+  - connection.py           # the Data singleton class for working with databases
+  - utils.py                # password generation, entropy, evaluation
+  - W_new_note.py           # record creation dialog
+  - W_edit_note.py          # editing dialog
+- W_generator.py            # password generator dialog
+- main.py                   # main window (QMainWindow)
+  - manager_db.db           # SQLite file (created automatically)
+- preview/                  # images example of an interview
+- requirements.txt          # imports
 
 ---
 
-## 🗄️ База данных [База данных]
-Таблица m_pass имеет следующую структуру:
-
-| Поле    | Тип        | Описание                                   |
+## 🗄️ Database
+The m_pass table has the following structure:
+| Field    | Type        | Description                              |
 |---------|------------|--------------------------------------------|
-| ID      | INTEGER (PK) | Автоинкрементный первичный ключ          |
-| Title   | VARCHAR(50) | Заголовок (например, "Gmail")             |
-| Login   | VARCHAR(50) | Имя пользователя / email                  |
-| Password| VARCHAR(100)| Пароль (хранится в открытом виде)         |
-| Url     | VARCHAR(200)| Адрес сайта                               |
-| Created | VARCHAR(20) | Дата в формате ISO (YYYY-MM-DD)           |
+| ID      | INTEGER (PK) | Auto-increment primary key               |
+| Title   | VARCHAR(50) | The title (for example, "Google.com")     |
+| Login   | VARCHAR(50) | User name / email                         |
+| Password| VARCHAR(100)| Password (stored in clear text)           |
+| Url     | VARCHAR(200)| Website address                           |
+| Created | VARCHAR(20) | Date in ISO format (YYYY-MM-DD)           |
 
 ---
 
-## 🖥️ Использование
+## 🖥️ Manual
 
-### Главное окно
+### Main window
 
-После запуска открывается таблица со всеми сохранёнными записями, отсортированными по дате создания (сначала новые).  
-Колонка `ID` скрыта, но используется для редактирования/удаления.
+After launching, a table opens with all saved records sorted by creation date (new ones first).  
+The `ID` column is hidden, but is used for editing/deleting.
 
-Панель инструментов:
+The Toolbar:
 
-- **Создать** – открывает диалог добавления записи
-- **Редактировать** – изменяет выделенную строку
-- **Удалить** – удаляет выделенную строку (с запросом подтверждения)
-- **Поиск** – поле для фильтрации по заголовку (регистронезависимо)
+- **Create** – opens the dialog for adding an entry
+- **Edit** – changes the selected line
+- **Delete** – deletes the highlighted line (with confirmation prompt)
+- **Search** – field for filtering by title (case-insensitive)
 
-### Создание записи
+### Create an entry
 
-1. Нажмите **«Создать»**.
-2. Заполните поля:
-   - **Title** – обязательное (рекомендуется)
-   - **Login** – логин или email
-   - **Password** – можно ввести вручную или нажать на кнопку "Сгенерировать"
-   - **Url** – веб-адрес
-3. Нажмите **«Create»**.  
-   Дата `Created` будет установлена автоматически на текущий день.
+1. Click **"Create"**.
+2. Fill in the fields:
+   - **Title** – required (recommended)
+   - **Login** – login or email
+   - **Password** – you can enter it manually or click on the "Generate" button
+   - **Url** – web address
+3. Click **"Create"**.  
+   The `Created` date will be set automatically for the current day.
 
-### Генератор паролей
+### Password Generator
 
-При создании или редактировании записи нажмите на кнопку "Сгенерировать". Откроется диалог:
+When creating or editing an entry, click on the "Generate" button. A dialog opens:
 
-![Окно генератора](https://docs/generator.png)
+![Generator window](https://docs/generator.png)
 
-- **Длина** – регулируется слайдером, отображается числом.
-- **Набор символов** – выберите нужные типы (хотя бы один).
-- **🔄** – сгенерировать новый пароль.
-- **Поле пароля** – отображается сгенерированный пароль.
-- **Энтропия** – например, `Entropy: 78.45 bit`.
-- **Оценка** – `Strength: Strong`.
+- **Length** – adjustable by slider, displayed by a number.
+- **Character set** – select the desired types (at least one).
+- **🔄** – generate a new password.
+- **Password field** – displays the generated password.
+- **Entropy** – for example, `Entropy: 78.45 bit'.
+- **Rating** – `Strength: Strong'.
 
-Нажмите **«OK»**, чтобы вставить пароль в основную форму.
+Click **"OK"** to insert the password into the main form.
 
-> 💡 **Совет:** Для максимальной стойкости используйте длину не менее 12 символов и все 4 типа символов.
+> 💡 **The Council:** For maximum durability, use a length of at least 12 characters and all 4 types of characters.
 
-### Редактирование и удаление
+### Edit and delete
 
-- **Редактирование:** выделите строку → «Редактировать» → измените данные → «Edit».  
-  Дата `Created` обновится на текущую.
-- **Удаление:** выделите строку → «Удалить» → подтвердите. Запись исчезнет.
+- **Editing:** select the line → "Edit" → change the data → "Edit".  
+  The `Created` date will be updated to the current one.
+- **Removal:** select the line → "Delete" → confirm. The record will disappear.
 
-### Поиск
+### Search
 
-Начните вводить текст в поле **Search** – таблица мгновенно фильтруется по полю `Title`.  
-Очистите поле, чтобы показать все записи.
+Start typing in the **Search** field – the table is instantly filtered by the `Title` field.  
+Clear the field to show all entries.
 
 ---
 
-## 🚧 Возможные улучшения
+## 🚧 Possible improvements
 
-Если вы хотите доработать приложение, вот список идей:
+List of ideas:
 
-- 🔐 **Шифрование паролей**.
-- 📤 **Экспорт/импорт с шифрованием**.
-- 🏷️ **Категории / теги**.
-- 🛡️ **Проверка пароля на компрометацию**.
-- 🌙 **Свои темы интерфейса**.
-- 🧩 **Автозаполнение форм на сайтох**.
+- 🔐 **Password encryption**.
+- 📤 **Export/import with encryption**.
+- 🏷️ **Categories / Tags**.
+- 🛡️ **Password verification for compromise**.
+- 🌙 **Custom interface themes**.
+- 🧩 **Auto-completion of forms on the website**.
