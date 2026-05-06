@@ -3,26 +3,25 @@
 An application for secure password storage and generation with a graphical interface on **PySide6**. 
 All data is stored in a local **SQLite** database. All CRUD operations, header search, and a built-in cryptographic password generator with an assessment of their entropy and durability are supported.
 
-[Video of the app's work]
-(https://youtu.be/FvWbDHgureo)  
+[Video of the app's work](https://youtu.be/FvWbDHgureo)  
 
 ## 📋 Content
 
-- [Features](#-features)
-- [Technologies](#-technologies)
-- [Project structure](#-project-structure)
-- [Database](#-database)
-- [Manual](#-manual)
-  - [Main window](#-main-window)
-  - [Creating an entry](#-creating-an-entry)
-  - [Password Generator](#-password-generator)
-  - [Editing and deleting](#-editing-and-deleting)
-  - [Search](#-search)
-- [Possible improvements](#-possible-improvements)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Project structure](#project-structure)
+- [Database](#database)
+- [Manual](#manual) 
+  - [Main window](#main-window)
+  - [Create note](#create-note)
+  - [Password Generator](#password-generator)
+  - [Edit and delete](#edit-and-delete)
+  - [Search](#search)
+- [Possible improvements](#possible-improvements)
 
 ---
 
-## ✨ Features
+## ✨ Features <a name="features"></a>
 
 - ✅ **Full-fledged account management**  
   Title, login, password, URL, date of creation/modification.
@@ -46,7 +45,7 @@ SQLite with automatic table and index creation.
   
 ---
 
-## 🧰 Technologies
+## 🧰 Technologies <a name="technologies"></a>
 
 | Component          | Technology                     |
 |-------------------|--------------------------------|
@@ -58,7 +57,7 @@ SQLite with automatic table and index creation.
 
 ---
 
-## 📁 Project structure
+## 📁 Project structure <a name="project-structure"></a>
 
 - password-manager/
 - src/
@@ -88,7 +87,7 @@ SQLite with automatic table and index creation.
 
 ---
 
-## 🗄️ Database
+## 🗄️ Database <a name="database"></a>
 The m_pass table has the following structure:
 | Field    | Type        | Description                              |
 |---------|------------|--------------------------------------------|
@@ -101,7 +100,7 @@ The m_pass table has the following structure:
 
 ---
 
-## 🖥️ Manual
+## 🖥️ Manual <a name="manual"></a> 
 
 ### Main window
 
@@ -115,7 +114,7 @@ The Toolbar:
 - **Delete** – deletes the highlighted line (with confirmation prompt)
 - **Search** – field for filtering by title (case-insensitive)
 
-### Create an entry
+### Create note
 
 1. Click **"Create"**.
 2. Fill in the fields:
@@ -156,7 +155,7 @@ Clear the field to show all entries.
 
 ---
 
-## 🚧 Possible improvements
+## 🚧 Possible improvements <a name="possible-improvements"></a>
 
 List of ideas:
 
