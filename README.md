@@ -107,6 +107,8 @@ The m_pass table has the following structure:
 After launching, a table opens with all saved records sorted by creation date (new ones first).  
 The `ID` column is hidden, but is used for editing/deleting.
 
+![Main window](https://github.com/6TRINN9/CS50_Python_Final_project/blob/main/preview/Main_window.jpg?raw=true)
+
 The Toolbar:
 
 - **Create** – opens the dialog for adding an entry
@@ -115,6 +117,8 @@ The Toolbar:
 - **Search** – field for filtering by title (case-insensitive)
 
 ### Create note
+
+![Create note](https://github.com/6TRINN9/CS50_Python_Final_project/blob/main/preview/new_note.jpg?raw=true)
 
 1. Click **"Create"**.
 2. Fill in the fields:
@@ -129,7 +133,7 @@ The Toolbar:
 
 When creating or editing an entry, click on the "Generate" button. A dialog opens:
 
-![Generator window](https://docs/generator.png)
+![Generator window](https://github.com/6TRINN9/CS50_Python_Final_project/blob/main/preview/password_generator.jpg?raw=true)
 
 - **Length** – adjustable by slider, displayed by a number.
 - **Character set** – select the desired types (at least one).
